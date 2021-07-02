@@ -33,4 +33,4 @@ when the review is older than 5 years its weight value defaults to 0.5. Otherwis
 
 We expect UI design to be responsive, it's nice to have code in TypeScript if possible (not a must), use React function components instead of classes, and Hooks whenever useful, show your code quality.
 
-Here is an [inspiration design](https://raw.githubusercontent.com/medhatdawoud/zoover-nodejs-server/master/inspiration-design.png?token=AACSPYAXQ4LOPDOQCSCEK7TA3W66C) for you, but feel free to make it as you want, the most important thing is to have a good visual for the data
+Here is an [inspiration design](inspiration-design.png) for you, but feel free to make it as you want, the most important thing is to have a good visual for the data
