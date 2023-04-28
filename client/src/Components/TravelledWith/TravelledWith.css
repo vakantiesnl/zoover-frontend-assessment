@@ -1,0 +1,10 @@
+.travelled-with{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding-bottom: 15px;
+}
+
+.travelledWith-category{
+    padding-bottom: 15px;
+}
