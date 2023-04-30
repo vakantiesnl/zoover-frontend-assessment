@@ -1,0 +1,10 @@
+.average-ratings{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17%;
+    text-transform: capitalize;
+}
+
+.aspecAvg-category{
+    padding-bottom: 15px;
+}
