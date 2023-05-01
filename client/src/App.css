@@ -1,3 +1,85 @@
 .App {
-  margin: 50px 100px;
+  margin: 2%;
+}
+
+.hotel-description{
+  font-size: 20px;
+}
+
+.hotel-big-star {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.big-star-container {
+  display: inline-block;
+  position: relative;
+}
+
+.big-hotel-star {
+  color: orange;
+  font-size: 50px;
+  display: block;
+  position: relative;
+}
+
+.big-star-content {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sort-reviews {
+  display: flex;
+  align-items: center;
+}
+
+.filter{
+  border-radius: 10px;
+  padding: 10px 1%;
+  width: 99%;
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-reviews{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sort-reviews {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .filter {
+    flex-wrap: nowrap;
+  }
+  
+  .filter-reviews{
+    width: 99%;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  
+  .pagination-box {
+    margin-top: 0;
+  }
 }
