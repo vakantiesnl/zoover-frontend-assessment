@@ -1,8 +1,9 @@
 .reviews {
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
     padding: 0 2%;
     margin-bottom: 10px;
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .user-name {
@@ -21,15 +22,62 @@
     font-weight: bold;
 }
 
-.general {
+.general-stars {
     padding-top: 10px;
 }
 
 .info {
-    padding: 15px;
+    padding: 7px;
     border-radius: 10px;
-    margin-top: 20px;
-    background-color: lightgrey;
-    height: 50px;
-    width: 25%;
+    background-color: lightblue;
+    margin-top: 10px;
+}
+
+.general-review {
+    display: flex;
+    gap: 2rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .general-review {
+        display: block;
+        flex-direction: column;
+    }
+    
+    .user-name {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .general-stars {
+        margin-top: 10px;
+    }
+    
+    .info {
+        font-size: 14px;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .user-name {
+        font-size: 12px;
+    }
+    
+    .review-title {
+        font-size: 1.2em;
+    }
+    
+    .general-stars {
+        font-size: 14px;
+    }
+    
+    .info {
+        font-size: 12px;
+    }
 }
