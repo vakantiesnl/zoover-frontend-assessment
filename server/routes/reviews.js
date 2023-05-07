@@ -6,7 +6,7 @@ var reviews = require('../api/reviews.json');
 var util = require('../_util');
 
 router.get('/', function (req, res) {
-  let { start = 1, limit, filterBy, sortBy = 'entryDate' } = req.query;
+  let { start = 1, limit = 5, filterBy, sortBy = 'entryDate' } = req.query;
   let data = _.sortBy(reviews, sortBy).reverse(); // reverse to sort desc
   let filtered = data.filter((review) =>
     filterBy ? review.traveledWith === filterBy : true
