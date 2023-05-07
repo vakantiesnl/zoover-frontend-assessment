@@ -15,9 +15,9 @@ function getAverageRatings(reviews) {
       }
     });
   });
-  let generalAvg = (generalCount / reviews.length).toFixed(1);
+  let generalAvg = Number((generalCount / reviews.length).toFixed(1));
   Object.keys(itemsCounts).map((item) => {
-    itemsCounts[item] = (items[item] / itemsCounts[item]).toFixed(1);
+    itemsCounts[item] = Number((items[item] / itemsCounts[item]).toFixed(1));
   });
   return { generalAvg, aspecsAvg: itemsCounts };
 }
