@@ -36,3 +36,20 @@ Be sure to use Node v16.
 We expect UI design to be responsive, it's nice to have code in TypeScript if possible (not a must), use React function components instead of classes, and Hooks whenever useful, show your code quality.
 
 Here is an [inspiration design](inspiration-design.png) for you, but feel free to make it as you want, the most important thing is to have a good visual for the data
+
+## Improvements
+
+- Accessibility improvements
+- Better tooling configuration (ie fix eslint plugin issue)
+- Add TypeScript to the backend
+- Import types from backend
+- [Atomic file structure](https://atomicdesign.bradfrost.com/chapter-2/#the-atomic-design-methodology)
+- I am currently prop drilling, if this was a larger project I would go for Redux
+- Add environment variables to avoid hardcoding localhost:8080
+- Add loading state
+- Use ReactQuery or other fetching library (Axios NextJS etc)
+- Expand the design token system to cover other aspects of the design, such as typography, spacing, and layouts.
+- Add JSDoc
+- Tests
+- StoryBook
+- Issue with double request on filter (conflict with pagination)
