@@ -31,7 +31,7 @@ function getAverageTravelledWith(reviews) {
     categoriesCount[category]++;
   });
   Object.keys(categoriesCount).forEach((item) => {
-    categories[item] = (categoriesCount[item] * 10) / reviews.length;
+    categories[item] = (categoriesCount[item] * 100) / reviews.length;
   });
 
   return categories;
