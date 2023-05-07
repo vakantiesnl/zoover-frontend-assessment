@@ -37,10 +37,20 @@ function getAverageTravelledWith(reviews) {
   return categories;
 }
 
+/**
+ * Calculate a weight for averaging the reviews.
+ * @param {object} review review object from JSON API.
+ * @returns {number} weight from 0.5 - 1.
+ */
 function getReviewWeight(review) {
-  // TODO: return the right calculations here instead of 1
-  // according to the provided info in README.md file
-  return 1;
+  const entryYear = new Date(review.entryDate).getFullYear();
+  const currentYear = new Date().getFullYear();
+
+  if (currentYear - entryYear > 5) {
+    return 0.5;
+  } else {
+    return 1 - (currentYear - entryYear) * 0.1;
+  }
 }
 
 module.exports = {
