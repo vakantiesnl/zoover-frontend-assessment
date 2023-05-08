@@ -41,8 +41,6 @@ const PageButton = ({
   setCurrentPage,
   className,
 }: PaginationProps) => {
-  console.log('totalPages ', totalPages);
-
   const changePage = (page: number) => {
     setCurrentPage(page);
   };
